@@ -1,0 +1,24 @@
+.about {
+  &__header .heading-secondary {
+    margin-bottom: 2rem;
+  }
+
+  .container {
+    display: flex;
+    gap: 5rem;
+  }
+
+  &__header {
+    flex-basis: 50%;
+  }
+
+  &__interests {
+    color: $gray;
+    margin-top: 6rem;
+  }
+
+  &__items {
+    display: flex;
+    list-style: none;
+  }
+}

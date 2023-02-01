@@ -1,0 +1,46 @@
+body {
+  position: relative;
+  display: grid;
+  grid-template-areas:
+    'hero'
+    'about'
+    'skills'
+    'contacts';
+  grid-template-rows: 60vh repeat(3, minmax(60vh, 80vh));
+
+  font-size: 1.6rem;
+  font-family: $primary-font;
+  overflow-x: hidden;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  width: 100vw;
+  padding: 2rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $white;
+}
+
+.hero {
+  grid-area: hero;
+  background-image: linear-gradient(0deg, $gray-dark 0%, $cyan 100%);
+  padding-top: 10rem;
+}
+
+.about {
+  grid-area: about;
+  margin-top: 35rem;
+}
+
+.skills {
+  grid-area: skills;
+}
+
+.contacts {
+  grid-area: contacts;
+}

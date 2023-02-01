@@ -1,0 +1,25 @@
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-family: $font-bold;
+  text-transform: uppercase;
+  color: $gray-dark;
+}
+
+.heading-primary {
+  font-size: 4.5rem;
+}
+
+.heading-secondary {
+  font-size: 4rem;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+}
+
+.sub-heading {
+  font-weight: $font-regular;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}

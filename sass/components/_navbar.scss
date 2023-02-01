@@ -1,0 +1,24 @@
+.navbar {
+  // background-color: $gray-dark;
+
+  &__brand {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: $font-bold;
+    font-size: 2.5rem;
+  }
+
+  &__items {
+    display: flex;
+    gap: 2rem;
+    color: inherit;
+    list-style: none;
+  }
+
+  &__link {
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: currentColor;
+  }
+}
