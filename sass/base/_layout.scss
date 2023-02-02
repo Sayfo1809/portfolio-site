@@ -4,9 +4,10 @@ body {
   grid-template-areas:
     'hero'
     'about'
-    'skills'
-    'contacts';
-  grid-template-rows: 60vh repeat(3, minmax(60vh, 80vh));
+    'education'
+    'experience'
+    'footer';
+  grid-template-rows: 60vh repeat(3, minmax(60vh, fit-content)) 7rem;
 
   font-size: 1.6rem;
   font-family: $primary-font;
@@ -29,18 +30,27 @@ body {
 .hero {
   grid-area: hero;
   background-image: linear-gradient(0deg, $gray-dark 0%, $cyan 100%);
-  padding-top: 10rem;
 }
 
 .about {
   grid-area: about;
-  margin-top: 35rem;
+  margin-top: 28rem;
 }
 
-.skills {
-  grid-area: skills;
+.education {
+  grid-area: education;
+  padding-block: 10rem;
+  background-color: $cyan;
 }
 
-.contacts {
-  grid-area: contacts;
+.experience {
+  grid-area: experience;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: $gray-dark;
+  color: $light;
+  text-align: center;
+  font-size: 2.5rem;
 }

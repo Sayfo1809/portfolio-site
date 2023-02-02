@@ -1,24 +1,69 @@
 .about {
-  &__header .heading-secondary {
-    margin-bottom: 2rem;
+  &__header,
+  &__item,
+  &__items {
+    display: flex;
   }
 
-  .container {
-    display: flex;
-    gap: 5rem;
+  &__item,
+  &__items {
+    align-items: center;
   }
 
   &__header {
-    flex-basis: 50%;
+    width: 100%;
+    margin-bottom: 10rem;
+
+    .heading-secondary {
+      flex-basis: 40%;
+      position: relative;
+      line-height: 4rem;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: -5rem;
+        left: 0;
+        width: 20%;
+        height: 1rem;
+        border-radius: 1rem;
+        background-color: #590213;
+      }
+    }
   }
 
-  &__interests {
+  &__text {
+    font-size: 2rem;
+    text-align: justify;
+    line-height: 1.6;
     color: $gray;
-    margin-top: 6rem;
+    flex-basis: 60%;
+  }
+
+  &__skills {
+    background-color: $gray-dark;
+    color: $gray-light;
+    padding: 2rem;
+    min-height: 8rem;
   }
 
   &__items {
-    display: flex;
     list-style: none;
+  }
+
+  &__item {
+    flex-basis: 20%;
+    gap: 1rem;
+    flex-direction: column;
+
+    i {
+      font-size: 5rem;
+    }
+
+    &-text {
+      font-size: 2.5rem;
+      font-weight: $font-bold;
+      letter-spacing: 2px;
+    }
   }
 }

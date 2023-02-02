@@ -1,0 +1,39 @@
+.education {
+  .container {
+    display: flex;
+  }
+
+  .heading-secondary {
+    flex-basis: 40%;
+
+    &__subheading {
+      color: $light;
+    }
+  }
+
+  .heading-tertiary {
+    color: $gray-dark;
+  }
+
+  &__content {
+    font-size: 2rem;
+    line-height: 1.6;
+    color: $light;
+    flex-basis: 60%;
+  }
+
+  &__entry {
+    &:not(last-child) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__completion {
+    font-size: 1.6rem;
+  }
+
+  &__achievements {
+    list-style: none;
+    margin-top: 1rem;
+  }
+}
