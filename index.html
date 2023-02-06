@@ -227,5 +227,16 @@
     </section> -->
 
     <footer class="footer">Copyright &copy; M Mamphoke</footer>
+
+    <script>
+      const navbar = document.querySelector('.navbar');
+
+      document.addEventListener('scroll', () => {
+        let scrollY = window.scrollY;
+
+        if (scrollY > 100) navbar.classList.add('fixed__nav');
+        if (scrollY < 100) navbar.classList.remove('fixed__nav');
+      });
+    </script>
   </body>
 </html>
