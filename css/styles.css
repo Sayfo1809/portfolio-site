@@ -173,10 +173,22 @@ body {
   flex-basis: 60%;
 }
 .about__skills {
+  position: relative;
   background-color: #343a40;
   color: #ccc;
-  padding: 2rem;
+  padding: 10rem 2rem 5rem 2rem;
   min-height: 8rem;
+}
+.about__skills::before {
+  content: "My Skills";
+  position: absolute;
+  top: 4rem;
+  left: 14rem;
+  letter-spacing: 5px;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
 }
 .about__items {
   list-style: none;

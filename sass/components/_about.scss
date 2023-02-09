@@ -41,10 +41,23 @@
   }
 
   &__skills {
+    position: relative;
     background-color: $gray-dark;
     color: $gray-light;
-    padding: 2rem;
+    padding: 10rem 2rem 5rem 2rem;
     min-height: 8rem;
+
+    &::before {
+      content: 'My Skills';
+      position: absolute;
+      top: 4rem;
+      left: 14rem;
+      letter-spacing: 5px;
+      font-size: 2rem;
+      font-weight: $font-bold;
+      font-family: $primary-font;
+      text-transform: uppercase;
+    }
   }
 
   &__items {
