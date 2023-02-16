@@ -155,16 +155,6 @@ body {
   position: relative;
   line-height: 4rem;
 }
-.about__header .heading-secondary::before {
-  content: "";
-  position: absolute;
-  top: -5rem;
-  left: 0;
-  width: 20%;
-  height: 1rem;
-  border-radius: 1rem;
-  background-color: #590213;
-}
 .about__text {
   font-size: 2rem;
   text-align: justify;

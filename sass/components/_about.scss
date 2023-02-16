@@ -19,16 +19,16 @@
       position: relative;
       line-height: 4rem;
 
-      &::before {
-        content: '';
-        position: absolute;
-        top: -5rem;
-        left: 0;
-        width: 20%;
-        height: 1rem;
-        border-radius: 1rem;
-        background-color: #590213;
-      }
+      // &::before {
+      //   content: '';
+      //   position: absolute;
+      //   top: -4rem;
+      //   left: 0;
+      //   width: 20%;
+      //   height: 1rem;
+      //   border-radius: 1rem;
+      //   background-color: #590213;
+      // }
     }
   }
 
