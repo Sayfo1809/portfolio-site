@@ -22,10 +22,14 @@ body {
   position: relative;
   display: grid;
   grid-template-areas: "hero" "about" "education" "experience" "footer";
-  grid-template-rows: 60vh 90vh repeat(2, minmax(60vh, fit-content)) 7rem;
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
+}
+@media only screen and (max-width: 76.25em) {
+  body {
+    grid-template-rows: 60vh 90vh repeat(2, minmax(60vh, fit-content)) 7rem;
+  }
 }
 
 .navbar {
