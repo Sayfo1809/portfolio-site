@@ -32,13 +32,20 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: transparent;
+  display: flex;
   width: 100vw;
   padding: 2rem 5rem;
-  display: flex;
+  background-color: transparent;
   justify-content: space-between;
   align-items: center;
   color: #fff;
+}
+@media only screen and (max-width: 36em) {
+  .navbar {
+    padding-inline: 2rem;
+    height: 10rem;
+    width: 112vw;
+  }
 }
 
 .hero {
@@ -244,6 +251,11 @@ body {
   bottom: -10rem;
   box-shadow: 0 2rem 8rem 0 rgba(153, 153, 153, 0.3);
 }
+@media only screen and (max-width: 36em) {
+  .hero__wrapper {
+    flex-direction: column;
+  }
+}
 .hero__img {
   border-radius: 1rem;
   overflow: hidden;
@@ -300,11 +312,21 @@ body {
   font-weight: 700;
   font-size: 2.5rem;
 }
+@media only screen and (max-width: 36em) {
+  .navbar__brand {
+    font-size: 2rem;
+  }
+}
 .navbar__items {
   display: flex;
   gap: 2rem;
   color: inherit;
   list-style: none;
+}
+@media only screen and (max-width: 36em) {
+  .navbar__items {
+    gap: 1rem;
+  }
 }
 .navbar__link {
   font-weight: 500;
@@ -316,8 +338,15 @@ body {
 .fixed__nav {
   position: fixed;
   background-color: #343a40;
+  padding-inline: 0;
   top: 0;
   left: 0;
-  width: 100vw;
   z-index: 1000;
+  padding: 2rem 5rem;
+}
+@media only screen and (max-width: 36em) {
+  .fixed__nav {
+    padding-inline: 2rem;
+    width: 100%;
+  }
 }

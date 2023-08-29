@@ -6,6 +6,10 @@
     letter-spacing: 2px;
     font-weight: $font-bold;
     font-size: 2.5rem;
+
+    @include respond(mobile) {
+      font-size: 2rem;
+    }
   }
 
   &__items {
@@ -13,6 +17,10 @@
     gap: 2rem;
     color: inherit;
     list-style: none;
+
+    @include respond(mobile) {
+      gap: 1rem;
+    }
   }
 
   &__link {
@@ -26,8 +34,14 @@
 .fixed__nav {
   position: fixed;
   background-color: $gray-dark;
+  padding-inline: 0;
   top: 0;
   left: 0;
-  width: 100vw;
   z-index: 1000;
+  padding: 2rem 5rem;
+
+  @include respond(mobile) {
+    padding-inline: 2rem;
+    width: 100%;
+  }
 }

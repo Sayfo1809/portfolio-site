@@ -18,13 +18,19 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: transparent;
+  display: flex;
   width: 100vw;
   padding: 2rem 5rem;
-  display: flex;
+  background-color: transparent;
   justify-content: space-between;
   align-items: center;
   color: $white;
+
+  @include respond(mobile) {
+    padding-inline: 2rem;
+    height: 10rem;
+    width: 112vw;
+  }
 }
 
 .hero {

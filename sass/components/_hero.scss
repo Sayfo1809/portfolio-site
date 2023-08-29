@@ -25,6 +25,10 @@
     border-radius: 1.2rem;
     bottom: -10rem;
     box-shadow: 0 2rem 8rem 0 rgb(153 153 153 / 30%);
+
+    @include respond(mobile) {
+      flex-direction: column;
+    }
   }
 
   &__img {
