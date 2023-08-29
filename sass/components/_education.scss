@@ -1,6 +1,10 @@
 .education {
   .container {
     display: flex;
+
+    @include respond(mobile) {
+      flex-direction: column;
+    }
   }
 
   .heading-secondary {

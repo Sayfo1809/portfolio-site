@@ -68,6 +68,11 @@ body {
   padding-block: 10rem;
   background-color: #17a2b8;
 }
+@media only screen and (max-width: 36em) {
+  .education {
+    padding-bottom: 2rem;
+  }
+}
 
 .experience {
   grid-area: experience;
@@ -233,6 +238,11 @@ body {
 
 .education .container {
   display: flex;
+}
+@media only screen and (max-width: 36em) {
+  .education .container {
+    flex-direction: column;
+  }
 }
 .education .heading-secondary {
   flex-basis: 40%;
