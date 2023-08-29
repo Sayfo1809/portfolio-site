@@ -39,12 +39,12 @@ body {
   justify-content: space-between;
   align-items: center;
   color: #fff;
+  gap: 2rem;
 }
 @media only screen and (max-width: 36em) {
   .navbar {
     padding-inline: 2rem;
     height: 10rem;
-    width: 112vw;
   }
 }
 

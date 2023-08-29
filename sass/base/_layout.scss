@@ -25,11 +25,11 @@ body {
   justify-content: space-between;
   align-items: center;
   color: $white;
+  gap: 2rem;
 
   @include respond(mobile) {
     padding-inline: 2rem;
     height: 10rem;
-    width: 112vw;
   }
 }
 
