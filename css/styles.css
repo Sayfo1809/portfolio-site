@@ -203,6 +203,13 @@ body {
 .about__items {
   list-style: none;
 }
+@media only screen and (max-width: 36em) {
+  .about__items {
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: center;
+  }
+}
 .about__item {
   flex-basis: 20%;
   gap: 1rem;
