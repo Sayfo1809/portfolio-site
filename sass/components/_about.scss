@@ -19,6 +19,12 @@
       position: relative;
       line-height: 4rem;
     }
+
+    @include respond(mobile) {
+      flex-direction: column;
+      padding-inline: 2rem;
+      margin-bottom: 0rem;
+    }
   }
 
   &__text {

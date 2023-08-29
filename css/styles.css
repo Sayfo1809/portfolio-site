@@ -57,6 +57,11 @@ body {
   grid-area: about;
   padding-top: 25rem;
 }
+@media only screen and (max-width: 36em) {
+  .about {
+    padding-top: 20rem;
+  }
+}
 
 .education {
   grid-area: education;
@@ -161,6 +166,13 @@ body {
   flex-basis: 40%;
   position: relative;
   line-height: 4rem;
+}
+@media only screen and (max-width: 36em) {
+  .about__header {
+    flex-direction: column;
+    padding-inline: 2rem;
+    margin-bottom: 0rem;
+  }
 }
 .about__text {
   font-size: 2rem;

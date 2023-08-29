@@ -41,6 +41,10 @@ body {
 .about {
   grid-area: about;
   padding-top: 25rem;
+
+  @include respond(mobile) {
+    padding-top: 20rem;
+  }
 }
 
 .education {
