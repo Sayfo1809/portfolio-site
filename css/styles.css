@@ -206,6 +206,13 @@ body {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 36em) {
+  .about__skills::before {
+    left: 0;
+    text-align: center;
+    width: 100vw;
+  }
+}
 .about__items {
   list-style: none;
 }

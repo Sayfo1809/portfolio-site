@@ -53,6 +53,12 @@
       font-weight: $font-bold;
       font-family: $primary-font;
       text-transform: uppercase;
+
+      @include respond(mobile) {
+        left: 0;
+        text-align: center;
+        width: 100vw;
+      }
     }
   }
 
