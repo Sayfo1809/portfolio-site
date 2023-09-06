@@ -379,6 +379,9 @@ body {
   text-decoration: none;
   color: currentColor;
 }
+.navbar__link:hover {
+  color: #6610f2;
+}
 
 .fixed__nav {
   position: fixed;
