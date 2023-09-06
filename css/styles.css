@@ -34,6 +34,7 @@ body {
   left: 0;
   display: flex;
   width: 100vw;
+  max-width: 100vw;
   padding: 2rem 5rem;
   background-color: transparent;
   justify-content: space-between;
@@ -43,7 +44,7 @@ body {
 }
 @media only screen and (max-width: 36em) {
   .navbar {
-    padding-inline: 2rem;
+    padding-inline: 3rem;
     height: 10rem;
   }
 }
