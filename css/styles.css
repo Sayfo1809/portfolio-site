@@ -351,7 +351,7 @@ body {
 }
 @media only screen and (max-width: 36em) {
   .navbar__brand {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 }
 .navbar__items {
@@ -363,6 +363,7 @@ body {
 @media only screen and (max-width: 36em) {
   .navbar__items {
     gap: 1rem;
+    font-size: 1.6rem;
   }
 }
 .navbar__link {
