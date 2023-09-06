@@ -12,6 +12,10 @@ body {
   font-size: 1.6rem;
   font-family: $primary-font;
   overflow-x: hidden;
+
+  @include respond(small-mobile) {
+    display: none;
+  }
 }
 
 .navbar {

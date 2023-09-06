@@ -27,6 +27,11 @@ body {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
 }
+@media only screen and (max-width: 17.5em) {
+  body {
+    display: none;
+  }
+}
 
 .navbar {
   position: absolute;
@@ -358,7 +363,7 @@ body {
 }
 @media only screen and (max-width: 36em) {
   .navbar__brand {
-    font-size: 1.4rem;
+    display: none;
   }
 }
 .navbar__items {
@@ -369,8 +374,7 @@ body {
 }
 @media only screen and (max-width: 36em) {
   .navbar__items {
-    gap: 1rem;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 .navbar__link {
@@ -395,6 +399,5 @@ body {
 @media only screen and (max-width: 36em) {
   .fixed__nav {
     padding-inline: 2rem;
-    width: 100%;
   }
 }

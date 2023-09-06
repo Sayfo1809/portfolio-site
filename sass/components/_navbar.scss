@@ -8,7 +8,7 @@
     font-size: 2.5rem;
 
     @include respond(mobile) {
-      font-size: 1.4rem;
+      display: none;
     }
   }
 
@@ -19,8 +19,7 @@
     list-style: none;
 
     @include respond(mobile) {
-      gap: 1rem;
-      font-size: 1.6rem;
+      font-size: 1.8rem;
     }
   }
 
@@ -47,6 +46,5 @@
 
   @include respond(mobile) {
     padding-inline: 2rem;
-    width: 100%;
   }
 }
