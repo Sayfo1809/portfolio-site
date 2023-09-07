@@ -30,7 +30,9 @@
     color: currentColor;
 
     &:hover {
-      color: $indigo;
+      color: $cyan-complement;
+      border-bottom: solid 2px $cyan-complement;
+      padding-bottom: 5px;
     }
   }
 }

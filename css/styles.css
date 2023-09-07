@@ -384,7 +384,9 @@ body {
   color: currentColor;
 }
 .navbar__link:hover {
-  color: #6610f2;
+  color: #d47364;
+  border-bottom: solid 2px #d47364;
+  padding-bottom: 5px;
 }
 
 .fixed__nav {
